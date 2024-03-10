@@ -1,0 +1,22 @@
+server:
+  port: 8085
+spring:
+  rabbitmq:
+    host: 192.168.157.110
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+  redis:
+    host: 192.168.157.110
+    port: 6379
+gun:
+  swagger:
+    title: 用户获取服务接口文档
+    package: com.edu.user.controller
+  db:
+    pd: 123
+    database: gun-user
+feign:
+  okhttp:
+    enabled: true #开启连接池

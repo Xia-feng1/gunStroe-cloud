@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: store-list-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.157.110
+      config:
+        file-extension: yaml
+        shared-configs: #指定需要共享的配置
+        - data-id: gun-jdbc.yaml #共享jdbc配置
+        - data-id: gun-swagger-log.yaml #共享swagger与log配置
+#        - data-id: gun-mq-redis.yaml #共享mq-redis配置

@@ -1,0 +1,27 @@
+server:
+  port: 8080
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: gun-list-service
+#          uri: lb://gun-list-service
+#          predicates:
+#            - Path=/gun/**
+#        - id: store-list-service
+#          uri: lb://store-list-service
+#          predicates:
+#            - Path=/store/**
+#        - id: user-list-service
+#          uri: lb://user-list-service
+#          predicates:
+#            - Path=/user/**
+#        - id: lend-list-service
+#          uri: lb://lend-list-service
+#          predicates:
+#            - Path=/lend/**
+
+hm:
+  auth:
+    excludePaths: # 无需登录校验的路径
+      - /user/login

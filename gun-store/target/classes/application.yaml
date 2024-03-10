@@ -1,0 +1,12 @@
+server:
+  port: 8082
+gun:
+  swagger:
+    title: 仓库获取服务接口文档
+    package: com.edu.store.controller
+  db:
+    pd: 123
+    database: gun-store
+feign:
+  okhttp:
+    enabled: true #开启连接池

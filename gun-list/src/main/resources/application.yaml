@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  rabbitmq:
+    host: 192.168.157.110
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    publisher-confirm-type: correlated #开启发送者确认模式
+    publisher-returns: true #开启发送者回执功能
+    template:
+      mandatory: true #开启失败后的回值。false：消息发送失败则直接丢弃
+  redis:
+    host: 192.168.157.110
+gun:
+  swagger:
+    title: 枪支获取服务接口文档
+    package: com.edu.gun.controller
+  db:
+    username: root
+    password: 123
+    database: gun-list
+  top-list:
+    max-top: 10
+feign:
+  okhttp:
+    enabled: true #开启连接池

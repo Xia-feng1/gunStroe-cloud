@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gun-store" />
+        <module name="gun-user" />
+        <module name="gun-common" />
+        <module name="gun-feign-api" />
+        <module name="gun-gateway" />
+        <module name="gun-list" />
+        <module name="gun-lend" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gun-getway" target="11" />
+      <module name="gun-service" target="11" />
+      <module name="gun-show-list" target="11" />
+      <module name="gun-store-list" target="11" />
+      <module name="lend" target="11" />
+      <module name="untitled" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gun-common" options="-parameters" />
+      <module name="gun-feign-api" options="-parameters" />
+      <module name="gun-gateway" options="-parameters" />
+      <module name="gun-getway" options="-parameters" />
+      <module name="gun-lend" options="-parameters" />
+      <module name="gun-list" options="-parameters" />
+      <module name="gun-service" options="-parameters" />
+      <module name="gun-show-list" options="-parameters" />
+      <module name="gun-store" options="-parameters" />
+      <module name="gun-store-list" options="-parameters" />
+      <module name="gun-user" options="-parameters" />
+      <module name="lend" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>

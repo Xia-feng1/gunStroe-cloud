@@ -1,0 +1,12 @@
+server:
+  port: 8086
+gun:
+  swagger:
+    title: 仓库获取服务接口文档
+    package: com.edu.lend.controller
+  db:
+    pd: 123
+    database: gun-lend
+feign:
+  okhttp:
+    enabled: true #开启连接池

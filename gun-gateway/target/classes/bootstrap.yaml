@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: gateway-service # 服务名称
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.157.110 # nacos地址
